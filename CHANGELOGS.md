@@ -17,3 +17,9 @@ All notable repository changes should be recorded here without representing plan
 - Added BENEFITS.md and COMPETITIVE-OBJECTIVES.md as planned, evidence-bounded product objectives.
 - Added SECURITY.md and NOTES.md with repository-safe development guidance and remaining baseline dependencies.
 - Added conservative repository-wide .gitignore and .editorconfig controls without assuming an implementation language or build system.
+
+- Added BRANDING.md with the verified current absence of a Backups-specific canonical branding asset and the requirement not to invent substitute branding.
+- Added USER-MANUAL.md as a pre-implementation user manual that does not claim unavailable workflows.
+- Added PRIVACY POLICY.md as a pre-implementation privacy requirements and disclosure record.
+- Added .github/PULL_REQUEST_TEMPLATE.md for state, verification, security/privacy, and recovery-aware change review.
+- Added the GoreeCloud Platform Contract 0.4 declaration with all nine Integral Platform Systems marked applicable-blocked pending implementation and acceptance.
