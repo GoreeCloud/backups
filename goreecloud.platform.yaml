@@ -10,7 +10,7 @@ component:
   repository: GoreeCloud/backups
 
 lifecycle: development
-version: 0.0.0-planned
+version: 0.1.0-dev.0
 
 supported_platforms: []
 
@@ -36,6 +36,8 @@ platform_systems:
     - BRANDING.md
     - LICENSE
     - LICENSE-DECISION.md
+    - TECHNOLOGY-DECISION.md
+    - MILESTONE-0.md
     notes: Privacy Shield integration is planned; no application-specific implementation or acceptance evidence exists.
 
   wardveil_security:
@@ -145,7 +147,7 @@ conformance:
     - SECURITY.md
     - PRIVACY POLICY.md
   blockers:
-    - No GoreeCloud Backups application implementation is currently verified in this repository.
+    - Only the Milestone 0 Development engineering foundation is present; no backup engine, restore engine, or repository persistence functionality is implemented.
     - No supported-platform runtime, build, test, release, deployment, restore-test, or production-acceptance evidence exists.
     - No Integral Platform System integration has been implemented or accepted.
     - No application-specific rendered, accessibility, performance, rollback, or Glaze UI conformance evidence exists.
