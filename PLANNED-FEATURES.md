@@ -1182,7 +1182,7 @@ Planned diagnostics include:
 - Integration availability.
 - Application-consistency checks.
 
-A \`doctor\` or equivalent command should provide actionable diagnostics without exposing secrets.
+A `doctor` or equivalent command should provide actionable diagnostics without exposing secrets.
 
 ## Failure Safety
 
