@@ -34,9 +34,7 @@ pub struct RepositoryFormatUnavailable;
 
 impl Display for RepositoryFormatUnavailable {
     fn fmt(&self, formatter: &mut Formatter<'_>) -> std::fmt::Result {
-        formatter.write_str(
-            "persistent GoreeCloud Backups repository format is not yet accepted",
-        )
+        formatter.write_str("persistent GoreeCloud Backups repository format is not yet accepted")
     }
 }
 
@@ -44,9 +42,7 @@ impl Error for RepositoryFormatUnavailable {}
 
 #[cfg(test)]
 mod tests {
-    use super::{
-        RepositoryPersistenceState, persistence_state, require_persistence_ready,
-    };
+    use super::{RepositoryPersistenceState, persistence_state, require_persistence_ready};
 
     #[test]
     fn milestone_zero_blocks_repository_persistence() {
