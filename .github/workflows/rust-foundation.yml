@@ -30,6 +30,26 @@ jobs:
           printf 'expected=%s\nactual=%s\n' "$EXPECTED_SHA" "$actual_sha"
           test "$actual_sha" = "$EXPECTED_SHA"
 
+      - name: Validate Platform manifest YAML and identity
+        run: |
+          python3 -m pip install --disable-pip-version-check PyYAML==6.0.2
+          python3 - <<'PY'
+          from pathlib import Path
+          import yaml
+
+          data = yaml.safe_load(Path("goreecloud.platform.yaml").read_text(encoding="utf-8"))
+          if not isinstance(data, dict):
+              raise SystemExit("goreecloud.platform.yaml must parse as a mapping")
+          if data.get("schema_version") != "0.4":
+              raise SystemExit("Backups Platform Contract version changed unexpectedly")
+          if data.get("lifecycle") != "development":
+              raise SystemExit("Backups lifecycle changed unexpectedly")
+          component = data.get("component")
+          if not isinstance(component, dict) or component.get("repository") != "GoreeCloud/backups":
+              raise SystemExit("Backups component identity changed unexpectedly")
+          print("platform-manifest: YAML syntax and current identity validated")
+          PY
+
       - name: Install pinned Rust toolchain
         run: |
           rustup toolchain install 1.98.1 --profile minimal --component clippy,rustfmt
