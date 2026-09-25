@@ -14,3 +14,7 @@ All notable repository changes should be recorded here without representing plan
 - Expanded `README.md` into a truthful repository entry point with lifecycle status, product direction, authority links, and implementation-state boundaries.
 - Added `SPECIFICATIONS.md` as the repository-coupled implementation specification and authority bridge.
 - Added `FEATURES.md` as the current functionality and lifecycle summary, explicitly preserving the no-verified-implementation state.
+- Added benefits, competitive objectives, branding status, user manual, privacy policy, security guidance, and repository notes.
+- Added `.gitignore`, `.editorconfig`, and a pull-request template.
+- Added the GoreeCloud Platform Contract 0.4 declaration with all nine Integral Platform Systems marked blocked pending implementation and acceptance.
+- Recorded unresolved branding and license/rights gaps without inventing assets or licensing terms.
