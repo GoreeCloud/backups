@@ -1,0 +1,31 @@
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor and temporary files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Local logs and generated output
+*.log
+tmp/
+temp/
+build/
+dist/
+out/
+
+# Local environment and secret-bearing files
+.env
+.env.*
+!.env.example
+*.local
+
+# Local test/recovery artifacts
+coverage/
+artifacts/
+test-output/
+recovery-output/
