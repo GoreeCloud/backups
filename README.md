@@ -2,7 +2,7 @@
 
 GoreeCloud Backups is GoreeCloud's planned native backup, restoration, verification, and recovery platform for applications, services, servers, workstations, infrastructure, and other approved data sources.
 
-> **Current state:** specification and repository documentation only. No GoreeCloud Backups application functionality is currently verified as implemented in this repository.
+> **Current state:** Development. The Milestone 0 native Rust engineering foundation is integrated on `main`, but no usable backup, repository-persistence, or restore functionality is implemented.
 
 ## Product Direction
 
@@ -36,11 +36,11 @@ The planned platform includes a native backup and restore engine, versioned snap
 | [PROJECT-RECORD.md](./PROJECT-RECORD.md) | Significant project history and verified project-state records |
 | [CHANGELOGS.md](./CHANGELOGS.md) | Repository-local change history |
 
-## Milestone 0 Development Candidate
+## Milestone 0 Development Foundation
 
-Draft Pull Request #5 establishes the first native source foundation using Rust 1.98.1.
+Pull Request #5 integrated the first native source foundation using Rust 1.98.1 as `b997478c447d11b902cca1ff82633ad370089ede`.
 
-The candidate includes:
+The integrated foundation includes:
 
 - A dependency-free Rust workspace for the initial core.
 - Recovery-first evidence semantics.
@@ -48,7 +48,7 @@ The candidate includes:
 - A minimal Development status CLI.
 - Pinned source validation for formatting, linting, tests, build, and CLI truth.
 
-This candidate does **not** provide usable backup or restore functionality.
+This foundation does **not** provide usable backup or restore functionality. Exact-head validation run 36096359838 and post-merge main run 36096435671 both passed.
 
 See [TECHNOLOGY-DECISION.md](./TECHNOLOGY-DECISION.md) and [MILESTONE-0.md](./MILESTONE-0.md).
 
