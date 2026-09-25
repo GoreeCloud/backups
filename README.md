@@ -49,6 +49,8 @@ Kopia, Restic, Rclone, and similar technologies may be supported for interoperab
 This repository is the authoritative GitHub location for GoreeCloud Backups project documentation and future implementation.
 
 
-## Current Governance Gap
+## License
 
-No repository license or approved rights notice has been verified. Public repository visibility must not be interpreted as a license grant.
+GoreeCloud Backups is currently governed by `AGPL-3.0-or-later` through the GoreeCloud default fallback license policy because no Backups-specific superseding license decision is recorded.
+
+See [LICENSE](./LICENSE) and [LICENSE-DECISION.md](./LICENSE-DECISION.md).
