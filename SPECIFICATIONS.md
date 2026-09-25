@@ -1,7 +1,7 @@
 # GoreeCloud Backups — Repository Specifications
 
 **Document Type:** Repository-Coupled Application Specification  
-**Status:** Active specification / no verified implementation  
+**Status:** Active specification / Development engineering foundation integrated; no usable backup or restore functionality  
 **Project:** GoreeCloud Backups  
 **Repository:** `GoreeCloud/backups`  
 **Last Updated:** 2026-09-24
@@ -16,9 +16,11 @@ If this file and those records differ, the more specific repository implementati
 
 ## 2. Current Implementation State
 
-No GoreeCloud Backups application functionality is currently verified as implemented in this repository.
+The Milestone 0 native Rust Development engineering foundation is integrated on authoritative `main`.
 
-The repository presently contains the authoritative project and feature documentation baseline. Planned behavior must not be treated as source implementation, runtime behavior, release evidence, production acceptance, or Stable status.
+Verified source-level foundation state includes the core/repository/CLI workspace, recovery-first evidence semantics, a fail-closed repository persistence boundary, a Development status CLI, and exact-head/post-merge Rust validation.
+
+No usable file-backup, snapshot, persistent-repository, restore, storage-provider, agent, server, scheduler, or graphical product functionality is verified. Source-foundation integration must not be treated as runtime recovery evidence, release evidence, production acceptance, or Stable status.
 
 ## 3. Initial Technology Foundation
 
@@ -28,9 +30,9 @@ Rust is selected for the core backup engine, repository-format implementation, r
 
 Milestone 0 begins with no third-party Rust runtime dependencies. Cryptographic, compression, chunking, serialization, storage, networking, and protocol dependencies must be added only after project-specific security, maintenance, license, provenance, portability, and API review.
 
-The repository format remains deliberately unimplemented for persistence until its first versioned specification and compatibility rules are accepted.
+The repository-format V1 design candidate now defines the proposed profile `goreecloud-backups/repository-v1` and version 1.0. Persistent repository use remains deliberately blocked until the format implementation and its required cryptographic, parser, corruption, interruption, path-safety, index-rebuild, and clean-recovery tests are accepted.
 
-See [TECHNOLOGY-DECISION.md](./TECHNOLOGY-DECISION.md) and [MILESTONE-0.md](./MILESTONE-0.md).
+See [TECHNOLOGY-DECISION.md](./TECHNOLOGY-DECISION.md), [MILESTONE-0.md](./MILESTONE-0.md), [REPOSITORY-FORMAT.md](./REPOSITORY-FORMAT.md), and [MILESTONE-1.md](./MILESTONE-1.md).
 
 ## 4. Native Product Boundary
 
@@ -91,6 +93,8 @@ The planned native repository architecture must support:
 - Controlled format evolution and migration.
 
 The native repository format must not require one cloud provider or third-party backup engine.
+
+The current V1 design candidate is defined in [REPOSITORY-FORMAT.md](./REPOSITORY-FORMAT.md). Format design acceptance is not permission to persist user backup data; the implementation gate in [MILESTONE-1.md](./MILESTONE-1.md) remains controlling.
 
 ## 8. Security and Privacy Requirements
 
