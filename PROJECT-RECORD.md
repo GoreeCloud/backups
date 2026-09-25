@@ -61,3 +61,16 @@ The pass:
 ### Scope boundary
 
 This documentation reconciliation does not establish source implementation, runtime validation, release readiness, production acceptance, or Stable status.
+
+
+## 2026-09-24 — Repository Governance Baseline Completed
+
+A conflict-free follow-on baseline adds the remaining repository-governance records without changing the verified product implementation state.
+
+Added records and controls include `BENEFITS.md`, `COMPETITIVE-OBJECTIVES.md`, `BRANDING.md`, `USER-MANUAL.md`, `PRIVACY POLICY.md`, `SECURITY.md`, `NOTES.md`, `.gitignore`, `.editorconfig`, `.github/PULL_REQUEST_TEMPLATE.md`, and the Platform Contract 0.4 declaration.
+
+All nine Integral Platform Systems are represented as applicable-blocked because no Backups-specific implementation or acceptance evidence exists.
+
+No approved Backups-specific branding asset was verified in the canonical branding repository. No repository license or approved rights notice was verified.
+
+This repository baseline remains documentation and governance only. It does not establish a backup engine, restore engine, supported runtime, release, deployment, production acceptance, or Stable status.
