@@ -27,6 +27,10 @@ The planned platform includes a native backup and restore engine, versioned snap
 | [COMPETITIVE-OBJECTIVES.md](./COMPETITIVE-OBJECTIVES.md) | Differentiation and evaluation objectives without unverified superiority claims |
 | [SECURITY.md](./SECURITY.md) | Repository-safe security guidance and reporting expectations |
 | [NOTES.md](./NOTES.md) | Current repository notes and unresolved baseline dependencies |
+| [BRANDING.md](./BRANDING.md) | Branding authority and current Backups asset-establishment status |
+| [USER-MANUAL.md](./USER-MANUAL.md) | Pre-implementation user manual and future operational guidance |
+| [PRIVACY POLICY.md](./PRIVACY%20POLICY.md) | Privacy requirements and pre-implementation disclosure |
+| [goreecloud.platform.yaml](./goreecloud.platform.yaml) | GoreeCloud Platform Contract 0.4 declaration |
 | [PROJECT-RECORD.md](./PROJECT-RECORD.md) | Significant project history and verified project-state records |
 | [CHANGELOGS.md](./CHANGELOGS.md) | Repository-local change history |
 
@@ -43,3 +47,8 @@ Kopia, Restic, Rclone, and similar technologies may be supported for interoperab
 ## Repository
 
 This repository is the authoritative GitHub location for GoreeCloud Backups project documentation and future implementation.
+
+
+## Current Governance Gap
+
+No repository license or approved rights notice has been verified. Public repository visibility must not be interpreted as a license grant.
