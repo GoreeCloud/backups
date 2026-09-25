@@ -86,3 +86,42 @@ The canonical branding-assets repository was checked and no Backups-specific app
 No repository license or approved rights notice was verified. Licensing remains unresolved.
 
 This baseline does not establish a backup engine, restore engine, repository implementation, supported runtime, release, deployment, production acceptance, or Stable status.
+
+
+## 2026-09-24 — License and Branding Baseline Resolved
+
+The repository baseline was reconciled against current GoreeCloud licensing and branding authority.
+
+### Licensing
+
+The active GoreeCloud Software Licensing Policy establishes `AGPL-3.0-or-later` as the default fallback when no project-specific superseding license exists.
+
+No Backups-specific superseding license decision was verified, so the repository now records the current governing fallback through:
+
+- `LICENSE`.
+- `LICENSE-DECISION.md`.
+- README license disclosure.
+
+This resolves the prior repository-rights gap without claiming that a final Backups-specific license-selection analysis has been completed.
+
+### Branding
+
+The canonical branding repository was re-audited and an approved historical Backup product icon was found at `products/backup/app-icon.svg`. Its visual identity remains suitable for the current native Backups product, while its metadata and provenance were stale.
+
+The canonical branding authority was migrated to:
+
+- Product ID: `backups`.
+- Product name: GoreeCloud Backups.
+- Canonical path: `products/backups/app-icon.svg`.
+- Consumer repository: `GoreeCloud/backups`.
+- Verified asset blob: `7a73f739c43ca35ad043b68cae632e84a8a68218`.
+
+The stale singular asset path was removed from the current branding tree. The approved geometry was preserved; only product identity/provenance metadata changed.
+
+Visual review confirmed the icon remains recognizable at full size and at 64 px, 32 px, and 16 px raster equivalents. Current consumer-eligible Glaze authority remains V1.6 / 1.6.0 Stable; V1.7 remains Development and does not replace the Stable target.
+
+### Lifecycle
+
+The repository Platform Contract and feature summary now align to the authoritative portfolio lifecycle of Development.
+
+Development status does not establish any backup-engine, repository, restore, runtime, release, deployment, production, or Stable functionality. No application functionality is yet verified as implemented.
