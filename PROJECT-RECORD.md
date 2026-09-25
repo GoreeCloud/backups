@@ -10,7 +10,7 @@
 
 ### Verified repository state
 
-At the beginning of this documentation operation, the `GoreeCloud/backups` repository existed on GitHub but contained no committed project files.
+At the beginning of the initial documentation operation, the `GoreeCloud/backups` repository existed on GitHub but contained no committed project files.
 
 ### Recorded product direction
 
@@ -26,7 +26,7 @@ Recovery is considered demonstrated only when the required recovery point exists
 
 ### Documentation baseline established
 
-The repository now maintains:
+The repository maintains:
 
 - `PLANNED-FEATURES.md` as the complete accepted planned-capability record.
 - `PROJECT-SPECIFICATIONS.md` as the project-level specification and authority map.
@@ -42,4 +42,22 @@ Future implementation claims must be added to `IMPLEMENTED-FEATURES.md` only aft
 
 ### Initial repository documentation commits
 
-The first authoritative planned-capability record was committed to the repository on 2026-09-24. Subsequent bootstrap documentation was added to establish the mandatory repository-native project records.
+The first authoritative planned-capability record was committed to the repository on 2026-09-24. Subsequent bootstrap documentation established the mandatory repository-native project records.
+
+## 2026-09-24 — Repository Documentation Baseline Extended
+
+### Structural reconciliation
+
+A follow-on documentation pass reconciled the repository against GoreeCloud repository-structure governance without changing the product implementation state.
+
+The pass:
+
+- Replaced the skeletal README with a complete repository entry point.
+- Added `SPECIFICATIONS.md` as the repository-coupled implementation specification.
+- Added `FEATURES.md` as the current functionality and lifecycle summary.
+- Cross-linked the project specification, planned features, implemented features, project record, and changelog.
+- Preserved the authoritative statement that no GoreeCloud Backups application functionality is yet verified as implemented.
+
+### Scope boundary
+
+This documentation reconciliation does not establish source implementation, runtime validation, release readiness, production acceptance, or Stable status.
