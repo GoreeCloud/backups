@@ -3,6 +3,7 @@
 **Document Type:** Current Functionality and Lifecycle Summary  
 **Status:** Active  
 **Project:** GoreeCloud Backups  
+**Release Lifecycle:** Development  
 **Last Updated:** 2026-09-24
 
 ## Current Verified Functionality
@@ -20,6 +21,9 @@ The repository currently provides the project-definition and planning baseline o
 - Repository changelog exists.
 - Repository-coupled specification exists.
 - Current feature/lifecycle summary exists.
+- Governed AGPL-3.0-or-later fallback licensing is established.
+- Approved product branding is established in `GoreeCloud/branding-assets` at `products/backups/app-icon.svg`.
+- Platform Contract 0.4 declaration exists with all nine Integral Platform Systems still blocked pending implementation and acceptance.
 
 These documentation capabilities are repository governance state; they are not backup-engine or product-runtime functionality.
 
