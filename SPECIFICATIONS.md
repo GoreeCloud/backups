@@ -20,7 +20,19 @@ No GoreeCloud Backups application functionality is currently verified as impleme
 
 The repository presently contains the authoritative project and feature documentation baseline. Planned behavior must not be treated as source implementation, runtime behavior, release evidence, production acceptance, or Stable status.
 
-## 3. Native Product Boundary
+## 3. Initial Technology Foundation
+
+The initial native core implementation uses Rust 1.98.1.
+
+Rust is selected for the core backup engine, repository-format implementation, restore engine, verification logic, CLI, and other security-sensitive or performance-critical components because these responsibilities require memory safety, predictable native performance, strong error handling, portability, and robust parsing/data-integrity boundaries.
+
+Milestone 0 begins with no third-party Rust runtime dependencies. Cryptographic, compression, chunking, serialization, storage, networking, and protocol dependencies must be added only after project-specific security, maintenance, license, provenance, portability, and API review.
+
+The repository format remains deliberately unimplemented for persistence until its first versioned specification and compatibility rules are accepted.
+
+See [TECHNOLOGY-DECISION.md](./TECHNOLOGY-DECISION.md) and [MILESTONE-0.md](./MILESTONE-0.md).
+
+## 4. Native Product Boundary
 
 GoreeCloud Backups must be implemented as an original GoreeCloud backup, restoration, verification, and recovery system.
 
@@ -37,7 +49,7 @@ The native product is expected to own its:
 
 Kopia, Restic, Rclone, and similar projects may be used only through explicitly bounded supporting roles such as interoperability, migration, transport, storage adapters, libraries, protocols, or engineering reference.
 
-## 4. Recovery-First Requirement
+## 5. Recovery-First Requirement
 
 The implementation must distinguish successful data capture from proven recoverability.
 
@@ -54,13 +66,13 @@ At minimum, the system must be able to represent separately:
 
 A completed backup operation alone must not produce a `Restore Verified` or equivalent state.
 
-## 5. Clean-Environment Recovery
+## 6. Clean-Environment Recovery
 
 The repository format and recovery tooling must support recovery without dependence on the original application installation, control-plane database, workstation, server, agent, or graphical interface.
 
 A supported clean-environment path is expected to require only a trusted release, the repository location, required recovery credentials, repository verification, recovery-point selection, restoration, and validation.
 
-## 6. Repository and Storage Requirements
+## 7. Repository and Storage Requirements
 
 The planned native repository architecture must support:
 
@@ -80,7 +92,7 @@ The planned native repository architecture must support:
 
 The native repository format must not require one cloud provider or third-party backup engine.
 
-## 7. Security and Privacy Requirements
+## 8. Security and Privacy Requirements
 
 Implementation must preserve least privilege, credential separation, recovery independence, safe destructive-operation controls, privacy-conscious monitoring, and minimal exposure of protected content.
 
@@ -88,19 +100,19 @@ The system must not invent custom cryptographic algorithms. Established and main
 
 Sensitive values such as repository passwords, encryption keys, reusable credentials, and protected file contents must not be exposed in ordinary logs, notifications, observability signals, or diagnostic output.
 
-## 8. Failure-Safety Requirements
+## 9. Failure-Safety Requirements
 
 Backup, restore, maintenance, retention, garbage collection, transfer, and migration workflows must fail safely.
 
 Process crashes, host reboots, network interruption, full disks, repository unavailability, partial transfers, corruption, stale locks, credential expiry, concurrent operations, and interrupted destructive workflows must not silently convert previously valid recovery data into an unrecoverable state.
 
-## 9. Integration Boundaries
+## 10. Integration Boundaries
 
 Planned GoreeCloud integrations include Notify, Manager, Everkeep, Wardveil Security, Privacy Shield, Policy, Observability, Mesh, Sync, and Identity.
 
 GoreeCloud Backups remains authoritative for technical backup, repository, verification, restore, and recovery-evidence state. Presentation or orchestration systems must not manufacture stronger protection claims than the underlying Backups evidence supports.
 
-## 10. Acceptance Boundary
+## 11. Acceptance Boundary
 
 Implementation claims belong in [IMPLEMENTED-FEATURES.md](./IMPLEMENTED-FEATURES.md) only after verification.
 
