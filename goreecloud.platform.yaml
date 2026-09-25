@@ -33,11 +33,11 @@ platform_systems:
     evidence:
       - PLANNED-FEATURES.md
       - PRIVACY POLICY.md
-    - BRANDING.md
-    - LICENSE
-    - LICENSE-DECISION.md
-    - TECHNOLOGY-DECISION.md
-    - MILESTONE-0.md
+      - BRANDING.md
+      - LICENSE
+      - LICENSE-DECISION.md
+      - TECHNOLOGY-DECISION.md
+      - MILESTONE-0.md
     notes: Privacy Shield integration is planned; no application-specific implementation or acceptance evidence exists.
 
   wardveil_security:
