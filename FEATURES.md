@@ -8,9 +8,9 @@
 
 ## Current Verified Functionality
 
-No GoreeCloud Backups application functionality is currently verified as implemented.
+No usable GoreeCloud Backups backup or restore product functionality is currently verified as implemented.
 
-The repository provides the project-definition and governance baseline, and Draft Pull Request #5 contains the first native Milestone 0 Development source foundation.
+The repository provides the project-definition and governance baseline, and Pull Request #5 integrated the first native Milestone 0 Development source foundation on `main`.
 
 ### Verified repository capabilities
 
@@ -27,11 +27,11 @@ The repository provides the project-definition and governance baseline, and Draf
 
 These documentation capabilities are repository governance state; they are not backup-engine or product-runtime functionality.
 
-### Development source candidate
+### Integrated Development source foundation
 
-Draft Pull Request #5 adds a Rust 1.98.1 workspace, recovery-first evidence invariants, a fail-closed repository persistence boundary, a Development status CLI, and pinned source validation.
+Pull Request #5 added a Rust 1.98.1 workspace, recovery-first evidence invariants, a fail-closed repository persistence boundary, a Development status CLI, and pinned exact-head source validation.
 
-The candidate intentionally keeps repository persistence disabled and does not implement backup or restore operations. Exact-head CI and governed integration remain required before the source foundation is treated as integrated main-branch state.
+The integrated foundation intentionally keeps repository persistence disabled and does not implement backup or restore operations. Exact-head validation run 36096359838 passed at PR head `23d26fa2cfdd60a3227c60621e9defc439736751`; guarded squash merge `b997478c447d11b902cca1ff82633ad370089ede` was then verified by successful main push run 36096435671.
 
 ## Planned Product Capabilities
 

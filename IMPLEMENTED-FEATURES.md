@@ -14,7 +14,7 @@ The Milestone 0 source foundation does not provide usable backup, repository per
 
 ## Development Engineering Foundation
 
-Draft Pull Request #5 contains the first native Development source foundation:
+Pull Request #5 integrated the first native Development source foundation on `main`:
 
 - Rust workspace pinned to Rust 1.98.1.
 - `goreecloud-backups-core` crate.
@@ -23,9 +23,9 @@ Draft Pull Request #5 contains the first native Development source foundation:
 - Fail-closed repository persistence gate that rejects persistence until the initial native repository format is defined and accepted.
 - `goreecloud-backups-cli` crate.
 - Development status CLI that reports backup and restore engines as not implemented and Stable eligibility as false.
-- Pinned repository CI candidate for formatting, metadata, linting, tests, build, and CLI truth checks.
+- Pinned exact-head repository CI for formatting, metadata, linting, tests, build, and CLI truth checks.
 
-This foundation remains a Development candidate until exact-head validation and governed integration are complete.
+This Development engineering foundation is integrated. Exact-head validation run 36096359838 passed at `23d26fa2cfdd60a3227c60621e9defc439736751`; guarded squash merge `b997478c447d11b902cca1ff82633ad370089ede` was verified by successful main push run 36096435671.
 
 ## Promotion Rule
 

@@ -30,11 +30,12 @@ All notable repository changes should be recorded here without representing plan
 - Reconciled repository lifecycle metadata to Development while preserving the no-verified-implementation boundary.
 - Removed resolved licensing and branding blockers from current repository status records; product implementation, runtime acceptance, platform integrations, Glaze application conformance, release, deployment, production acceptance, and Stable qualification remain open.
 
-- Established Draft Pull Request #5 for the first native Milestone 0 source foundation.
+- Integrated Pull Request #5 as the first native Milestone 0 source foundation.
 - Selected Rust 1.98.1 as the initial core engine/repository/CLI language and recorded the decision in TECHNOLOGY-DECISION.md.
 - Added a dependency-free Rust workspace with core, repository, and CLI crates.
 - Added recovery-first evidence logic that requires repository accessibility/integrity, recovery credentials, successful restoration, and restored-data validation rather than treating backup existence as restore proof.
 - Added a fail-closed repository persistence gate so no persistent native repository format can be used before its specification is accepted.
 - Added a Development CLI that truthfully reports backup/restore as not implemented and Stable eligibility as false.
-- Added pinned Rust source validation for formatting, metadata, clippy, tests, build, and CLI truth checks.
-- Preserved the implementation boundary: Milestone 0 is an engineering foundation, not usable backup or restore functionality.
+- Added pinned exact-head Rust source validation for formatting, metadata, clippy, tests, build, and CLI truth checks.
+- Verified exact PR head `23d26fa2cfdd60a3227c60621e9defc439736751` through Rust Foundation run `36096359838`, guarded squash merge `b997478c447d11b902cca1ff82633ad370089ede`, and exact merged-main push run `36096435671`.
+- Preserved the implementation boundary: Milestone 0 is an integrated Development engineering foundation, not usable backup or restore functionality.

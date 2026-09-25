@@ -2,6 +2,7 @@
 
 **Lifecycle:** Development  
 **Milestone:** Native Source Foundation  
+**Milestone Status:** Integrated / source-level acceptance complete  
 **Implementation Boundary:** Engineering foundation only; no backup or restore capability is accepted
 
 ## Objective
@@ -70,6 +71,17 @@ Milestone 0 is accepted as a Development source foundation only when:
 - Documentation continues to state that no actual backup or restore functionality exists.
 
 Passing these checks does not establish release, deployment, production, recovery, Glaze UI, or Stable acceptance.
+
+## Verification Evidence
+
+- Pull Request: #5.
+- Exact validated PR head: `23d26fa2cfdd60a3227c60621e9defc439736751`.
+- Exact-head Rust Foundation run: `36096359838` — passed.
+- Guarded squash merge: `b997478c447d11b902cca1ff82633ad370089ede`.
+- Exact merged-main Rust Foundation push run: `36096435671` — passed.
+- Repository persistence remained fail-closed throughout validation.
+
+This evidence establishes Milestone 0 as an integrated Development engineering foundation only. It does not establish usable backup or restore capability, runtime recovery acceptance, deployment, production acceptance, or Stable eligibility.
 
 ## Next Milestone
 
