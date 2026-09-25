@@ -67,3 +67,22 @@ A second documentation pass added repository controls that could be established 
 Licensing, product-specific branding verification, privacy-policy language, user-manual maturity, and the machine-readable GoreeCloud Platform Contract remain dependent on separate authoritative inputs and must not be guessed.
 
 The portfolio-level repository-baseline task remains the tracking authority for those unresolved obligations.
+
+
+## 2026-09-24 — Repository Governance Baseline Completed
+
+The remaining baseline records were added without changing product implementation state:
+
+- BRANDING.md.
+- USER-MANUAL.md.
+- PRIVACY POLICY.md.
+- .github/PULL_REQUEST_TEMPLATE.md.
+- goreecloud.platform.yaml using Platform Contract schema 0.4.
+
+The Platform Contract evaluates exactly nine Integral Platform Systems and marks each application-specific integration applicable-blocked because no implementation or acceptance evidence exists.
+
+The canonical branding-assets repository was checked and no Backups-specific approved asset was verified. BRANDING.md therefore records the gap and prohibits treating substitute artwork as approved branding.
+
+No repository license or approved rights notice was verified. Licensing remains unresolved.
+
+This baseline does not establish a backup engine, restore engine, repository implementation, supported runtime, release, deployment, production acceptance, or Stable status.
