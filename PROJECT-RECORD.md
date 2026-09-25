@@ -166,3 +166,21 @@ Milestone 0 establishes a verified Development engineering foundation only.
 It does not implement file backup, snapshotting, deduplication, compression, encryption, repository persistence, remote storage, restoration, agents, repository servers, scheduling, application-consistent protection, Glaze UI, runtime Integral Platform System integrations, deployment, production acceptance, or Stable qualification.
 
 The next implementation gate is the first versioned native repository-format specification. Persistent repository-writing code must remain blocked until that format, compatibility policy, corruption behavior, atomicity model, and clean-environment recovery boundary are accepted.
+
+
+## 2026-09-24 — Repository Format V1 Design Candidate Established
+
+A Development design candidate now defines the first native GoreeCloud Backups repository profile:
+
+- Profile: `goreecloud-backups/repository-v1`.
+- Format version: 1.0.
+- Specification: `REPOSITORY-FORMAT.md`.
+- Implementation milestone: `MILESTONE-1.md`.
+
+The design prioritizes independent clean-environment recovery, immutable data objects, snapshot-last commit semantics, rebuildable derived indexes, encrypted protected metadata, repository-local keyed content identifiers, explicit version compatibility, safe interrupted operations, and storage-provider neutrality.
+
+The proposed cryptographic profile uses established primitives and requires maintained external implementations rather than GoreeCloud-created cryptography.
+
+The Rust repository crate records the proposed format identity but remains fail closed. Persistent repository creation and writing are not authorized by this design record and remain blocked until the implementation passes the required cryptographic, encoding, parser/fuzz, corruption, interruption, pack/index, path-safety, and clean-recovery acceptance tests.
+
+This design candidate does not establish usable backup, repository, restore, release, deployment, production, or Stable functionality.
