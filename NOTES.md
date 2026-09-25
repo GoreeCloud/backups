@@ -27,8 +27,13 @@ Planned capabilities must remain clearly separated from implemented capabilities
 
 Documentation-only changes must not be used as evidence for runtime behavior, release readiness, production acceptance, or Stable status.
 
-## Remaining Repository Baseline Work
+## Repository Baseline Status
 
-The broader GoreeCloud repository-baseline obligation remains active for creation, review, and approval of Backups-specific branding assets.
+The repository documentation/governance baseline is established.
 
-Privacy-policy, user-manual, Platform Contract, and governed AGPL-3.0-or-later fallback licensing records now exist on main. Official branding assets must still not be guessed or represented as approved before the canonical branding workflow completes.
+- Governed `AGPL-3.0-or-later` fallback licensing is recorded in `LICENSE` and `LICENSE-DECISION.md`.
+- The approved GoreeCloud Backups product icon is established in `GoreeCloud/branding-assets` at `products/backups/app-icon.svg`, verified blob `7a73f739c43ca35ad043b68cae632e84a8a68218`.
+- Privacy, user-manual, security, branding, and Platform Contract baseline records exist on main.
+- Lifecycle is Development, but no application functionality is yet verified as implemented.
+
+Remaining work is product implementation and evidence-backed acceptance rather than missing repository-baseline documentation.
