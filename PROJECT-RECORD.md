@@ -125,3 +125,44 @@ Visual review confirmed the icon remains recognizable at full size and at 64 px,
 The repository Platform Contract and feature summary now align to the authoritative portfolio lifecycle of Development.
 
 Development status does not establish any backup-engine, repository, restore, runtime, release, deployment, production, or Stable functionality. No application functionality is yet verified as implemented.
+
+
+## 2026-09-24 — Milestone 0 Native Source Foundation Integrated
+
+The first native GoreeCloud Backups source foundation was accepted and integrated through Pull Request #5.
+
+### Technology decision
+
+Rust 1.98.1 is the initial primary language for the security-sensitive and performance-critical core backup engine, repository-format implementation, restore engine, verification logic, and command-line foundation.
+
+The initial workspace introduces no third-party Rust runtime dependencies. Future cryptography, compression, chunking, storage, networking, serialization, and protocol dependencies remain subject to separate security, licensing, provenance, portability, and maintenance review.
+
+### Integrated source foundation
+
+The integrated workspace contains:
+
+- `goreecloud-backups-core`.
+- `goreecloud-backups-repository`.
+- `goreecloud-backups-cli`.
+- Recovery-first evidence semantics.
+- A fail-closed repository persistence gate.
+- A Development CLI that reports backup/restore as not implemented and Stable eligibility as false.
+- Pinned Rust and GitHub Actions validation.
+
+Repository persistence is deliberately unavailable until the first versioned native repository format and compatibility rules are specified and accepted.
+
+### Verification
+
+Exact PR head `23d26fa2cfdd60a3227c60621e9defc439736751` passed Rust Foundation run `36096359838`, including exact-head checkout assertion, Rust 1.98.1 installation, formatting, locked metadata, clippy with warnings denied, tests, build, and CLI truth checks.
+
+The PR was expected-head guarded and squash-merged as `b997478c447d11b902cca1ff82633ad370089ede`.
+
+The exact merged main revision passed Rust Foundation push run `36096435671`.
+
+### Acceptance boundary
+
+Milestone 0 establishes a verified Development engineering foundation only.
+
+It does not implement file backup, snapshotting, deduplication, compression, encryption, repository persistence, remote storage, restoration, agents, repository servers, scheduling, application-consistent protection, Glaze UI, runtime Integral Platform System integrations, deployment, production acceptance, or Stable qualification.
+
+The next implementation gate is the first versioned native repository-format specification. Persistent repository-writing code must remain blocked until that format, compatibility policy, corruption behavior, atomicity model, and clean-environment recovery boundary are accepted.
