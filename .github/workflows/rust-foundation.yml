@@ -1,0 +1,54 @@
+name: Rust Foundation
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate Rust foundation
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout exact workflow revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Install pinned Rust toolchain
+        run: |
+          rustup toolchain install 1.98.1 --profile minimal --component clippy,rustfmt
+          rustup default 1.98.1
+          rustc --version
+          cargo --version
+
+      - name: Verify formatting
+        run: cargo fmt --all -- --check
+
+      - name: Verify workspace metadata
+        run: cargo metadata --locked --no-deps --format-version 1 > /dev/null
+
+      - name: Lint
+        run: cargo clippy --workspace --all-targets --locked -- -D warnings
+
+      - name: Test
+        run: cargo test --workspace --locked
+
+      - name: Build
+        run: cargo build --workspace --locked
+
+      - name: Verify Development CLI state
+        run: |
+          output="$(cargo run --quiet --locked -p goreecloud-backups-cli -- status)"
+          printf '%s\n' "$output"
+          grep -Fx 'lifecycle: development' <<<"$output"
+          grep -Fx 'backup-engine: not-implemented' <<<"$output"
+          grep -Fx 'restore-engine: not-implemented' <<<"$output"
+          grep -Fx 'repository-persistence: blocked-until-format-accepted' <<<"$output"
+          grep -Fx 'stable-eligible: false' <<<"$output"
