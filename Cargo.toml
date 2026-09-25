@@ -1,0 +1,18 @@
+[workspace]
+members = [
+  "crates/backups-core",
+  "crates/backups-repository",
+  "crates/backups-cli",
+]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0-dev.0"
+edition = "2024"
+rust-version = "1.98.1"
+license = "AGPL-3.0-or-later"
+repository = "https://github.com/GoreeCloud/backups"
+authors = ["GoreeCloud"]
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
