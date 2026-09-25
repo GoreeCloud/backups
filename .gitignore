@@ -1,0 +1,41 @@
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Editors and local tooling
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Local runtime/state
+tmp/
+temp/
+.cache/
+logs/
+*.log
+coverage/
+
+# Generated/build output
+build/
+dist/
+out/
+target/
+bin/
+obj/
+
+# Dependencies
+node_modules/
+vendor/
+
+# Local recovery test artifacts
+restore-test-output/
+recovery-test-output/
+local-repositories/
+test-repositories/
