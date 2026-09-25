@@ -29,6 +29,6 @@ Documentation-only changes must not be used as evidence for runtime behavior, re
 
 ## Remaining Repository Baseline Work
 
-The broader GoreeCloud repository-baseline obligation remains active for controls that require additional authoritative inputs, including licensing, product-specific branding verification, privacy-policy language, user-manual maturity, and the machine-readable GoreeCloud Platform Contract.
+The broader GoreeCloud repository-baseline obligation remains active only for unresolved controls that still require separate authoritative resolution, principally repository licensing/rights and creation or approval of Backups-specific branding assets.
 
-Those items should be completed only after their governing source and required factual state have been verified.
+Privacy-policy, user-manual, and Platform Contract baseline records now exist on main. Licensing terms and official branding assets must still not be guessed.
