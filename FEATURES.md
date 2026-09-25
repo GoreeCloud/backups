@@ -10,7 +10,7 @@
 
 No GoreeCloud Backups application functionality is currently verified as implemented.
 
-The repository currently provides the project-definition and planning baseline only.
+The repository provides the project-definition and governance baseline, and Draft Pull Request #5 contains the first native Milestone 0 Development source foundation.
 
 ### Verified repository capabilities
 
@@ -26,6 +26,12 @@ The repository currently provides the project-definition and planning baseline o
 - Platform Contract 0.4 declaration exists with all nine Integral Platform Systems still blocked pending implementation and acceptance.
 
 These documentation capabilities are repository governance state; they are not backup-engine or product-runtime functionality.
+
+### Development source candidate
+
+Draft Pull Request #5 adds a Rust 1.98.1 workspace, recovery-first evidence invariants, a fail-closed repository persistence boundary, a Development status CLI, and pinned source validation.
+
+The candidate intentionally keeps repository persistence disabled and does not implement backup or restore operations. Exact-head CI and governed integration remain required before the source foundation is treated as integrated main-branch state.
 
 ## Planned Product Capabilities
 
