@@ -33,6 +33,8 @@ The planned platform includes a native backup and restore engine, versioned snap
 | [goreecloud.platform.yaml](./goreecloud.platform.yaml) | GoreeCloud Platform Contract 0.4 declaration |
 | [TECHNOLOGY-DECISION.md](./TECHNOLOGY-DECISION.md) | Initial core implementation language and technology boundaries |
 | [MILESTONE-0.md](./MILESTONE-0.md) | Native source-foundation scope and acceptance gates |
+| [REPOSITORY-FORMAT.md](./REPOSITORY-FORMAT.md) | Proposed native repository format V1 and clean-recovery semantics |
+| [MILESTONE-1.md](./MILESTONE-1.md) | Repository-format design and implementation acceptance boundary |
 | [PROJECT-RECORD.md](./PROJECT-RECORD.md) | Significant project history and verified project-state records |
 | [CHANGELOGS.md](./CHANGELOGS.md) | Repository-local change history |
 
@@ -51,6 +53,16 @@ The integrated foundation includes:
 This foundation does **not** provide usable backup or restore functionality. Exact-head validation run 36096359838 and post-merge main run 36096435671 both passed.
 
 See [TECHNOLOGY-DECISION.md](./TECHNOLOGY-DECISION.md) and [MILESTONE-0.md](./MILESTONE-0.md).
+
+## Repository Format V1 Design Candidate
+
+The current design branch defines the proposed native repository profile `goreecloud-backups/repository-v1`, format version 1.0.
+
+The design specifies repository identity/versioning, password-protected key slots, standards-based cryptographic profiles, keyed content identifiers, immutable encrypted packs, rebuildable indexes, snapshot-last commit semantics, encrypted snapshot manifests, recovery-evidence objects, safe garbage collection, clean-environment recovery, and explicit format evolution.
+
+The Rust repository crate now exposes the proposed V1 identity but **continues to reject persistent repository use** until the format implementation and required recovery tests are separately accepted.
+
+See [REPOSITORY-FORMAT.md](./REPOSITORY-FORMAT.md) and [MILESTONE-1.md](./MILESTONE-1.md).
 
 ## Implementation-State Rule
 
