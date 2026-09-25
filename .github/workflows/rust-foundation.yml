@@ -59,5 +59,7 @@ jobs:
           grep -Fx 'lifecycle: development' <<<"$output"
           grep -Fx 'backup-engine: not-implemented' <<<"$output"
           grep -Fx 'restore-engine: not-implemented' <<<"$output"
-          grep -Fx 'repository-persistence: blocked-until-format-accepted' <<<"$output"
+          grep -Fx 'repository-format: goreecloud-backups/repository-v1' <<<"$output"
+          grep -Fx 'repository-format-version: 1.0' <<<"$output"
+          grep -Fx 'repository-persistence: blocked-until-implementation-accepted' <<<"$output"
           grep -Fx 'stable-eligible: false' <<<"$output"
