@@ -9,7 +9,7 @@ component:
   product_name: GoreeCloud Backups
   repository: GoreeCloud/backups
 
-lifecycle: concept
+lifecycle: development
 version: 0.0.0-planned
 
 supported_platforms: []
@@ -33,6 +33,9 @@ platform_systems:
     evidence:
       - PLANNED-FEATURES.md
       - PRIVACY POLICY.md
+    - BRANDING.md
+    - LICENSE
+    - LICENSE-DECISION.md
     notes: Privacy Shield integration is planned; no application-specific implementation or acceptance evidence exists.
 
   wardveil_security:
@@ -145,5 +148,4 @@ conformance:
     - No GoreeCloud Backups application implementation is currently verified in this repository.
     - No supported-platform runtime, build, test, release, deployment, restore-test, or production-acceptance evidence exists.
     - No Integral Platform System integration has been implemented or accepted.
-    - No approved Backups-specific branding asset was verified in the canonical branding-assets repository.
     - No application-specific rendered, accessibility, performance, rollback, or Glaze UI conformance evidence exists.
