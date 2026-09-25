@@ -27,7 +27,7 @@ The planned platform includes a native backup and restore engine, versioned snap
 | [COMPETITIVE-OBJECTIVES.md](./COMPETITIVE-OBJECTIVES.md) | Differentiation and evaluation objectives without unverified superiority claims |
 | [SECURITY.md](./SECURITY.md) | Repository-safe security guidance and reporting expectations |
 | [NOTES.md](./NOTES.md) | Current repository notes and unresolved baseline dependencies |
-| [BRANDING.md](./BRANDING.md) | Branding authority and current Backups asset-establishment status |
+| [BRANDING.md](./BRANDING.md) | Approved Backups identity, canonical asset provenance, and branding boundaries |
 | [USER-MANUAL.md](./USER-MANUAL.md) | Pre-implementation user manual and future operational guidance |
 | [PRIVACY POLICY.md](./PRIVACY%20POLICY.md) | Privacy requirements and pre-implementation disclosure |
 | [goreecloud.platform.yaml](./goreecloud.platform.yaml) | GoreeCloud Platform Contract 0.4 declaration |
@@ -54,3 +54,8 @@ This repository is the authoritative GitHub location for GoreeCloud Backups proj
 GoreeCloud Backups is currently governed by `AGPL-3.0-or-later` through the GoreeCloud default fallback license policy because no Backups-specific superseding license decision is recorded.
 
 See [LICENSE](./LICENSE) and [LICENSE-DECISION.md](./LICENSE-DECISION.md).
+
+
+## Branding
+
+The approved GoreeCloud Backups application icon is maintained in `GoreeCloud/branding-assets` at `products/backups/app-icon.svg`. Branding establishes product identity only and does not imply application implementation, Glaze UI application conformance, release readiness, or production acceptance.
