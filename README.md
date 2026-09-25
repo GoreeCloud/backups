@@ -31,8 +31,26 @@ The planned platform includes a native backup and restore engine, versioned snap
 | [USER-MANUAL.md](./USER-MANUAL.md) | Pre-implementation user manual and future operational guidance |
 | [PRIVACY POLICY.md](./PRIVACY%20POLICY.md) | Privacy requirements and pre-implementation disclosure |
 | [goreecloud.platform.yaml](./goreecloud.platform.yaml) | GoreeCloud Platform Contract 0.4 declaration |
+| [TECHNOLOGY-DECISION.md](./TECHNOLOGY-DECISION.md) | Initial core implementation language and technology boundaries |
+| [MILESTONE-0.md](./MILESTONE-0.md) | Native source-foundation scope and acceptance gates |
 | [PROJECT-RECORD.md](./PROJECT-RECORD.md) | Significant project history and verified project-state records |
 | [CHANGELOGS.md](./CHANGELOGS.md) | Repository-local change history |
+
+## Milestone 0 Development Candidate
+
+Draft Pull Request #5 establishes the first native source foundation using Rust 1.98.1.
+
+The candidate includes:
+
+- A dependency-free Rust workspace for the initial core.
+- Recovery-first evidence semantics.
+- A repository-format boundary that fails closed and refuses persistent repository use until a format is accepted.
+- A minimal Development status CLI.
+- Pinned source validation for formatting, linting, tests, build, and CLI truth.
+
+This candidate does **not** provide usable backup or restore functionality.
+
+See [TECHNOLOGY-DECISION.md](./TECHNOLOGY-DECISION.md) and [MILESTONE-0.md](./MILESTONE-0.md).
 
 ## Implementation-State Rule
 
