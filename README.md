@@ -23,6 +23,10 @@ The planned platform includes a native backup and restore engine, versioned snap
 | [PLANNED-FEATURES.md](./PLANNED-FEATURES.md) | Accepted planned features and capabilities |
 | [FEATURES.md](./FEATURES.md) | Current functionality and lifecycle summary |
 | [IMPLEMENTED-FEATURES.md](./IMPLEMENTED-FEATURES.md) | Verified implemented functionality only |
+| [BENEFITS.md](./BENEFITS.md) | Planned product benefits and the evidence boundary for claiming them |
+| [COMPETITIVE-OBJECTIVES.md](./COMPETITIVE-OBJECTIVES.md) | Differentiation and evaluation objectives without unverified superiority claims |
+| [SECURITY.md](./SECURITY.md) | Repository-safe security guidance and reporting expectations |
+| [NOTES.md](./NOTES.md) | Current repository notes and unresolved baseline dependencies |
 | [PROJECT-RECORD.md](./PROJECT-RECORD.md) | Significant project history and verified project-state records |
 | [CHANGELOGS.md](./CHANGELOGS.md) | Repository-local change history |
 
