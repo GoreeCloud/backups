@@ -29,6 +29,6 @@ Documentation-only changes must not be used as evidence for runtime behavior, re
 
 ## Remaining Repository Baseline Work
 
-The broader GoreeCloud repository-baseline obligation remains active only for unresolved controls that still require separate authoritative resolution, principally repository licensing/rights and creation or approval of Backups-specific branding assets.
+The broader GoreeCloud repository-baseline obligation remains active for creation, review, and approval of Backups-specific branding assets.
 
-Privacy-policy, user-manual, and Platform Contract baseline records now exist on main. Licensing terms and official branding assets must still not be guessed.
+Privacy-policy, user-manual, Platform Contract, and governed AGPL-3.0-or-later fallback licensing records now exist on main. Official branding assets must still not be guessed or represented as approved before the canonical branding workflow completes.
