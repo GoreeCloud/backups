@@ -27,9 +27,7 @@ fn main() -> ExitCode {
 
 fn print_status() {
     let persistence = match persistence_state() {
-        RepositoryPersistenceState::BlockedUntilFormatAccepted => {
-            "blocked-until-format-accepted"
-        }
+        RepositoryPersistenceState::BlockedUntilFormatAccepted => "blocked-until-format-accepted",
     };
 
     println!("product: {PRODUCT_NAME}");
