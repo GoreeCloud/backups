@@ -11,3 +11,6 @@ All notable repository changes should be recorded here without representing plan
 - Recorded the requirement that GoreeCloud Backups remain an original GoreeCloud application rather than a fork of Kopia, Restic, Rclone, or another backup product.
 - Added repository-native project specification and project record documents.
 - Added the verified implemented-feature record with no application functionality yet claimed as implemented.
+- Expanded `README.md` into a truthful repository entry point with lifecycle status, product direction, authority links, and implementation-state boundaries.
+- Added `SPECIFICATIONS.md` as the repository-coupled implementation specification and authority bridge.
+- Added `FEATURES.md` as the current functionality and lifecycle summary, explicitly preserving the no-verified-implementation state.

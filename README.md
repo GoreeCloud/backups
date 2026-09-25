@@ -1,2 +1,41 @@
-# backups
-GoreeCloud's native backup solution for applications, services, servers, and etcetera.
+# GoreeCloud Backups
+
+GoreeCloud Backups is GoreeCloud's planned native backup, restoration, verification, and recovery platform for applications, services, servers, workstations, infrastructure, and other approved data sources.
+
+> **Current state:** specification and repository documentation only. No GoreeCloud Backups application functionality is currently verified as implemented in this repository.
+
+## Product Direction
+
+GoreeCloud Backups is intended to be an original GoreeCloud application and backup engine. It is not planned as a fork of Kopia, Restic, Rclone, or another third-party backup product.
+
+Its governing product principle is recovery-first:
+
+**A backup is not proven merely because it was created. Recovery is proven when the required recovery point exists, remains intact and accessible, the required credentials are available, and the protected information can be successfully restored and validated.**
+
+The planned platform includes a native backup and restore engine, versioned snapshots, deduplication, compression, authenticated encryption, an open versioned repository format, multiple repository backends, application-consistent protection, retention, integrity verification, restore testing, recovery evidence, monitoring, notifications, CLI/API access, Glaze UI, and GoreeCloud integrations.
+
+## Authoritative Repository Records
+
+| Record | Purpose |
+| --- | --- |
+| [PROJECT-SPECIFICATIONS.md](./PROJECT-SPECIFICATIONS.md) | Project identity, scope, architecture, recovery model, security/privacy boundaries, and acceptance requirements |
+| [SPECIFICATIONS.md](./SPECIFICATIONS.md) | Repository-coupled implementation specification and authority map |
+| [PLANNED-FEATURES.md](./PLANNED-FEATURES.md) | Accepted planned features and capabilities |
+| [FEATURES.md](./FEATURES.md) | Current functionality and lifecycle summary |
+| [IMPLEMENTED-FEATURES.md](./IMPLEMENTED-FEATURES.md) | Verified implemented functionality only |
+| [PROJECT-RECORD.md](./PROJECT-RECORD.md) | Significant project history and verified project-state records |
+| [CHANGELOGS.md](./CHANGELOGS.md) | Repository-local change history |
+
+## Implementation-State Rule
+
+Documentation, design intent, accepted plans, architecture, and repository records are not implementation evidence.
+
+A capability must not be described as implemented, released, production-ready, or Stable until the applicable source, tests, recovery evidence, security controls, target-environment behavior, and acceptance gates have been verified.
+
+## Third-Party Boundary
+
+Kopia, Restic, Rclone, and similar technologies may be supported for interoperability, migration, transport, storage access, libraries, protocols, or engineering reference. They do not define the native GoreeCloud Backups product identity, engine, or repository format.
+
+## Repository
+
+This repository is the authoritative GitHub location for GoreeCloud Backups project documentation and future implementation.
