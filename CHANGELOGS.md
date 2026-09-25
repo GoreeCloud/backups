@@ -39,3 +39,10 @@ All notable repository changes should be recorded here without representing plan
 - Added pinned exact-head Rust source validation for formatting, metadata, clippy, tests, build, and CLI truth checks.
 - Verified exact PR head `23d26fa2cfdd60a3227c60621e9defc439736751` through Rust Foundation run `36096359838`, guarded squash merge `b997478c447d11b902cca1ff82633ad370089ede`, and exact merged-main push run `36096435671`.
 - Preserved the implementation boundary: Milestone 0 is an integrated Development engineering foundation, not usable backup or restore functionality.
+
+- Defined the proposed native repository profile `goreecloud-backups/repository-v1`, format version 1.0, in `REPOSITORY-FORMAT.md`.
+- Defined Milestone 1 as repository-format design/implementation work with persistent repository writes still blocked.
+- Proposed deterministic structured metadata, password-protected key slots, standards-based cryptographic profiles, keyed repository-local content identifiers, immutable encrypted packs, rebuildable indexes, snapshot-last commit semantics, clean-environment recovery, and explicit format-evolution rules.
+- Updated the Rust repository boundary and Development CLI to expose the proposed V1 format identity while changing the persistence state to `blocked-until-implementation-accepted`.
+- Kept persistent repository writes fail closed until schema fixtures, cryptographic interoperability, parser/fuzz, pack, corruption, interruption, index-rebuild, path-safety, and clean-environment recovery tests are accepted.
+- Repaired malformed Platform Contract evidence structure and moved repository-wide governance evidence to the conformance evidence list.
