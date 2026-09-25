@@ -3,7 +3,9 @@
 use std::process::ExitCode;
 
 use goreecloud_backups_core::{LIFECYCLE, PRODUCT_NAME};
-use goreecloud_backups_repository::{FORMAT_MAJOR, FORMAT_MINOR, FORMAT_PROFILE, RepositoryPersistenceState, persistence_state};
+use goreecloud_backups_repository::{
+    FORMAT_MAJOR, FORMAT_MINOR, FORMAT_PROFILE, RepositoryPersistenceState, persistence_state,
+};
 
 fn main() -> ExitCode {
     let mut arguments = std::env::args().skip(1);
