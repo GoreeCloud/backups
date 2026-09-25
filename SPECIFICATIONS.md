@@ -1,0 +1,109 @@
+# GoreeCloud Backups — Repository Specifications
+
+**Document Type:** Repository-Coupled Application Specification  
+**Status:** Active specification / no verified implementation  
+**Project:** GoreeCloud Backups  
+**Repository:** `GoreeCloud/backups`  
+**Last Updated:** 2026-09-24
+
+## 1. Authority and Purpose
+
+This file defines the repository-coupled implementation specification for GoreeCloud Backups.
+
+The broader project specification is maintained in [PROJECT-SPECIFICATIONS.md](./PROJECT-SPECIFICATIONS.md). The accepted planned capability inventory is maintained in [PLANNED-FEATURES.md](./PLANNED-FEATURES.md).
+
+If this file and those records differ, the more specific repository implementation requirement must remain consistent with the higher-level project specification and GoreeCloud governance.
+
+## 2. Current Implementation State
+
+No GoreeCloud Backups application functionality is currently verified as implemented in this repository.
+
+The repository presently contains the authoritative project and feature documentation baseline. Planned behavior must not be treated as source implementation, runtime behavior, release evidence, production acceptance, or Stable status.
+
+## 3. Native Product Boundary
+
+GoreeCloud Backups must be implemented as an original GoreeCloud backup, restoration, verification, and recovery system.
+
+The native product is expected to own its:
+
+- Backup and restore engine.
+- Snapshot and recovery-point model.
+- Repository format.
+- Repository indexing and maintenance behavior.
+- Verification and recovery-evidence model.
+- Protection-policy model.
+- CLI and API.
+- User experience.
+
+Kopia, Restic, Rclone, and similar projects may be used only through explicitly bounded supporting roles such as interoperability, migration, transport, storage adapters, libraries, protocols, or engineering reference.
+
+## 4. Recovery-First Requirement
+
+The implementation must distinguish successful data capture from proven recoverability.
+
+At minimum, the system must be able to represent separately:
+
+- Backup-operation success.
+- Snapshot existence.
+- Repository health.
+- Required-object availability.
+- Recovery-credential availability.
+- Restore-test success.
+- Restoration validation.
+- Evidence-backed protection state.
+
+A completed backup operation alone must not produce a `Restore Verified` or equivalent state.
+
+## 5. Clean-Environment Recovery
+
+The repository format and recovery tooling must support recovery without dependence on the original application installation, control-plane database, workstation, server, agent, or graphical interface.
+
+A supported clean-environment path is expected to require only a trusted release, the repository location, required recovery credentials, repository verification, recovery-point selection, restoration, and validation.
+
+## 6. Repository and Storage Requirements
+
+The planned native repository architecture must support:
+
+- Versioned repository metadata.
+- Content-defined chunking.
+- Content-addressed data.
+- Deduplication.
+- Compression before encryption where applicable.
+- Authenticated encryption.
+- Pack/index structures suitable for local and remote storage.
+- Integrity verification.
+- Retention and garbage collection.
+- Safe interrupted-operation recovery.
+- Multiple independent repositories.
+- Storage-provider portability.
+- Controlled format evolution and migration.
+
+The native repository format must not require one cloud provider or third-party backup engine.
+
+## 7. Security and Privacy Requirements
+
+Implementation must preserve least privilege, credential separation, recovery independence, safe destructive-operation controls, privacy-conscious monitoring, and minimal exposure of protected content.
+
+The system must not invent custom cryptographic algorithms. Established and maintained cryptographic implementations must be used.
+
+Sensitive values such as repository passwords, encryption keys, reusable credentials, and protected file contents must not be exposed in ordinary logs, notifications, observability signals, or diagnostic output.
+
+## 8. Failure-Safety Requirements
+
+Backup, restore, maintenance, retention, garbage collection, transfer, and migration workflows must fail safely.
+
+Process crashes, host reboots, network interruption, full disks, repository unavailability, partial transfers, corruption, stale locks, credential expiry, concurrent operations, and interrupted destructive workflows must not silently convert previously valid recovery data into an unrecoverable state.
+
+## 9. Integration Boundaries
+
+Planned GoreeCloud integrations include Notify, Manager, Everkeep, Wardveil Security, Privacy Shield, Policy, Observability, Mesh, Sync, and Identity.
+
+GoreeCloud Backups remains authoritative for technical backup, repository, verification, restore, and recovery-evidence state. Presentation or orchestration systems must not manufacture stronger protection claims than the underlying Backups evidence supports.
+
+## 10. Acceptance Boundary
+
+Implementation claims belong in [IMPLEMENTED-FEATURES.md](./IMPLEMENTED-FEATURES.md) only after verification.
+
+Stable recovery claims require representative restoration evidence, not merely successful backup creation or source-level tests.
+
+See [FEATURES.md](./FEATURES.md) for the current lifecycle summary and [CHANGELOGS.md](./CHANGELOGS.md) for repository changes.
