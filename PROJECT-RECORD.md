@@ -43,3 +43,33 @@ Future implementation claims must be added to `IMPLEMENTED-FEATURES.md` only aft
 ### Initial repository documentation commits
 
 The first authoritative planned-capability record was committed to the repository on 2026-09-24. Subsequent bootstrap documentation was added to establish the mandatory repository-native project records.
+
+
+## 2026-09-24 — Repository Governance Baseline
+
+The repository documentation baseline was expanded to satisfy the current GoreeCloud application/service repository structure without converting planned product capabilities into implementation claims.
+
+The baseline adds:
+
+- `README.md`.
+- `SPECIFICATIONS.md`.
+- `FEATURES.md`.
+- `BENEFITS.md`.
+- `COMPETITIVE-OBJECTIVES.md`.
+- `BRANDING.md`.
+- `USER-MANUAL.md`.
+- `PRIVACY POLICY.md`.
+- `NOTES.md`.
+- `SECURITY.md`.
+- `.gitignore`.
+- `.editorconfig`.
+- `.github/PULL_REQUEST_TEMPLATE.md`.
+- `goreecloud.platform.yaml`.
+
+The Platform Contract uses schema version 0.4 and evaluates the nine current Integral Platform Systems. Every application-specific integration remains blocked because no implementation or acceptance evidence exists.
+
+No Backups-specific approved branding asset was verified in the canonical GoreeCloud branding repository during this baseline pass.
+
+No repository license or approved rights notice was verified. Licensing therefore remains unresolved and public repository visibility must not be interpreted as a license grant.
+
+This baseline does not establish a backup engine, repository implementation, restore capability, user interface, supported runtime, release, deployment, production acceptance, or Stable status.
