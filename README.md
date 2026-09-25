@@ -39,3 +39,23 @@ Kopia, Restic, Rclone, and similar technologies may be supported for interoperab
 ## Repository
 
 This repository is the authoritative GitHub location for GoreeCloud Backups project documentation and future implementation.
+
+
+## Additional Repository Records
+
+| Record | Purpose |
+| --- | --- |
+| [BENEFITS.md](./BENEFITS.md) | Intended product benefits with implementation-evidence boundaries |
+| [COMPETITIVE-OBJECTIVES.md](./COMPETITIVE-OBJECTIVES.md) | Competitive benchmark and differentiation objectives |
+| [BRANDING.md](./BRANDING.md) | Branding authority and current asset-establishment status |
+| [USER-MANUAL.md](./USER-MANUAL.md) | Pre-implementation user manual and future operational guidance |
+| [PRIVACY POLICY.md](./PRIVACY%20POLICY.md) | Privacy requirements and pre-implementation disclosure |
+| [SECURITY.md](./SECURITY.md) | Security guidance and release security boundary |
+| [NOTES.md](./NOTES.md) | Current repository notes, gaps, and naming reconciliation |
+| [goreecloud.platform.yaml](./goreecloud.platform.yaml) | Platform Contract 0.4 declaration |
+
+## Current Governance Gaps
+
+No approved Backups-specific branding asset was verified in the canonical `GoreeCloud/branding-assets` repository during this baseline pass.
+
+No repository license or approved rights notice has been verified. Public repository visibility must not be interpreted as a license grant.
