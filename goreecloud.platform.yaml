@@ -146,5 +146,4 @@ conformance:
     - No supported-platform runtime, build, test, release, deployment, restore-test, or production-acceptance evidence exists.
     - No Integral Platform System integration has been implemented or accepted.
     - No approved Backups-specific branding asset was verified in the canonical branding-assets repository.
-    - No repository license or approved rights notice has been verified.
     - No application-specific rendered, accessibility, performance, rollback, or Glaze UI conformance evidence exists.
